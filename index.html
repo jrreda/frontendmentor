@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor · Challenges</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        font-family: "Outfit", sans-serif;
+        background: #d5e1ef;
+        color: #1f3251;
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        font-weight: 700;
+        margin: 0 0 0.25rem;
+      }
+      .subtitle {
+        color: #7b879d;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+      .challenges {
+        display: grid;
+        gap: 1rem;
+        max-width: 360px;
+        width: 100%;
+      }
+      .challenges a {
+        display: block;
+        background: #fff;
+        padding: 1.25rem 1.5rem;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #1f3251;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        transition: box-shadow 0.2s, transform 0.2s;
+      }
+      .challenges a:hover {
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        transform: translateY(-2px);
+      }
+      .challenges a span {
+        color: #7b879d;
+        font-weight: 400;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Frontend Mentor</h1>
+      <p class="subtitle">Challenges I’ve built in my free time</p>
+      <nav class="challenges" aria-label="Challenge list">
+        <a href="qr-code-component-main/">
+          QR code component
+          <span> — Card with QR code</span>
+        </a>
+        <!-- Add more challenges here as you complete them:
+        <a href="another-challenge-main/">Another challenge <span> — Short description</span></a>
+        -->
+      </nav>
+    </main>
+  </body>
+</html>
