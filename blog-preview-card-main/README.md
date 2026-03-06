@@ -10,9 +10,6 @@ Solution to the [Blog preview card challenge](https://www.frontendmentor.io/chal
 
 ![](./preview.jpg)
 
-**Links**
-
-- [Solution](https://www.frontendmentor.io/solutions/your-solution) · [Live site](https://your-live-url.com)
 
 ## Built with
 
