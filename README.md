@@ -9,4 +9,4 @@ Challenges I solve on my free time to improve my coding skills by building reali
 
 - QR code component [code](./qr-code-component-main/) - [Live url](https://jrreda.github.io/frontendmentor/qr-code-component-main/)
 - Blog preview card [code](./blog-preview-card-main/) - [live url](https://jrreda.github.io/frontendmentor/blog-preview-card-main/)
-
+- Social links profile [code](./social-links-profile-main/) - [live url](https://jrreda.github.io/frontendmentor/social-links-profile-main/)
