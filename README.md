@@ -16,4 +16,4 @@ Challenges I solve on my free time to improve my coding skills by building reali
 
 ### Building responsive layouts `#Newbie`
 
-- Product preview card [code](./product-preview-card-component-main/) - [live url](https://jrreda.github.io/frontendmentor/product-preview-card-component-mai/)
+- Product preview card [code](./product-preview-card-component-main/) - [live url](https://jrreda.github.io/frontendmentor/product-preview-card-component-main/)

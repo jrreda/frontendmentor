@@ -18,7 +18,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [code](./product-preview-card-component-main/)
-- Live Site URL: [live url](https://jrreda.github.io/frontendmentor/product-preview-card-component-mai/)
+- Live Site URL: [live url](https://jrreda.github.io/frontendmentor/product-preview-card-component-main/)
 
 ## My process
 
