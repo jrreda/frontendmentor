@@ -1,36 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS 4 -->
+  <script type="module" defer src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Configure Tailwind to use the custom font -->
+  <style type="text/tailwindcss">
+    @theme {
+        --font-montserrat: "Montserrat", sans-serif;
+        --font-fraunces: "Fraunces", serif;
+        --font-size-base: 14px;
+        --color-dark-cyan: hsl(158, 36%, 37%);
+        --color-dark-cyan-hover: hsl(158, 42%, 18%);
+        --color-dark-grayish-blue: hsl(228, 12%, 48%);
+        --color-cream: hsl(30, 38%, 92%);
+        --color-black: hsl(212, 21%, 14%);
+      }
+    </style>
 </head>
-<body>
 
-  Perfume
+<body class="flex flex-col justify-center items-center bg-cream mx-auto sm:my-16 max-w-screen-sm font-montserrat">
+  <main class="w-full max-w-[375px] sm:max-w-[600px] h-full">
+    <article
+      class="flex sm:flex-row flex-col justify-center shadow-md hover:shadow-xl my-4 rounded-xl transition-shadow duration-300">
+      <figure class="sm:w-1/2">
+        <img src="./images/image-product-desktop.jpg" alt="Product image" width="300" height="300"
+          class="hidden sm:block rounded-l-xl w-full h-full object-cover" />
+        <img src="./images/image-product-mobile.jpg" alt="Product image" width="300" height="300"
+          class="sm:hidden block rounded-t-md w-full h-full object-cover" />
+      </figure>
 
-  Gabrielle Essence Eau De Parfum
+      <div class="space-y-4 bg-white p-8 sm:rounded-r-xl rounded-b-lg sm:w-1/2">
+        <span class="block text-dark-grayish-blue text-sm uppercase tracking-[0.25em]">Perfume</span>
+        <h1 class="w-11/12 font-fraunces text-3xl leading-tight tracking-tight">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="text-dark-grayish-blue text-sm">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex items-center gap-4">
+          <span class="font-fraunces text-dark-cyan text-3xl leading-tight tracking-tight">$149.99</span>
+          <span class="text-dark-grayish-blue text-sm line-through leading-snug tracking-tight">$169.99</span>
+        </div>
+        <button
+          class="flex justify-center items-center bg-dark-cyan hover:bg-dark-cyan-hover p-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dark-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 w-full cursor-pointer"
+          aria-label="Add Gabrielle Essence Eau De Parfum to cart">
+          <img src="./images/icon-cart.svg" alt="Cart icon" width="14" height="14" class="inline-block mr-2"
+            aria-hidden="true" />
+          <span class="text-white text-sm">Add to Cart</span>
+        </button>
+      </div>
+    </article>
+  </main>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="my-4 text-dark-grayish-blue text-sm text-center">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer" tabindex="0"
+      class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dark-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 hover:text-dark-cyan underline">Frontend
+      Mentor</a>. Coded by
+    <a href="https://www.frontendmentor.io/profile/jrreda" target="_blank" rel="noopener noreferrer" tabindex="0"
+      class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dark-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900 text-blue-500 hover:text-dark-cyan underline">REDA</a>.
+  </footer>
 </body>
+
 </html>
